@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+
+<body>
+    <div class="login">
+        <table>
+            <tr>
+                <td>
+                    <label>userName</label>
+                    <input onblur="verif()" type="text" id="userName" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Nom</label>
+                    <input  type="text" id="nom" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Prenom</label>
+                    <input type="text" id="prenom" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Date de naissance</label>
+                    <input onblur="verife()" type="date" id="date_de_naissance" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Email</label>
+                    <input onblur="validation()" type="email" id="Email" /></td>
+            </tr>
+            <tr>
+                    <td>
+                        <label>Telephone</label>
+                        <input onblur="valider_numero()" type="number" id="Telephone" />
+                    </td>
+            <tr>
+                <td>
+                    <label>Mot de passe</label>
+                    <input onblur="pswd()" type="text" id="mot_de_passe" />
+                    <span id="RepPass2"></span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label>Confiermer mot de passe</label>
+                    <input onblur="validate()" type="text" id="confirmer_mot_de_passe" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="registre()">
+                        registre </button></td>
+            </tr> 
+            <tr>
+                <td>
+                    <button onclick="getitem()">
+                        getitem </button></td>
+            </tr> 
+        </table>
+        <script src='../main.js'></script>
+</body>
+
+</html>
